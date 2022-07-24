@@ -4,7 +4,6 @@ Docker is a very powerful tool for developing applications that run in the cloud
 
 Today I'm going to show you how to do this, using a simple API server in Python as an example.
 
-Video: https://youtu.be/zkMRWDQV4Tg.
 
 ## Usage
 
