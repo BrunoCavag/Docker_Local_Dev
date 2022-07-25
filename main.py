@@ -1,5 +1,6 @@
 import json
 from dataclasses import dataclass, field
+from typing import List, Dict
 
 from fastapi import FastAPI, HTTPException, Response
 
@@ -10,11 +11,11 @@ app = FastAPI()
 class Channel:
     id: str
     name: str
-    tags: list[str] = field(default_factory=list)
+    tags: List[str] = field(default_factory=list)
     description: str = ""
 
 
-channels: dict[str, Channel] = {}
+channels: Dict[str, Channel] = {}
 
 with open("channels.json", encoding="utf8") as file:
     channels_raw = json.load(file)
